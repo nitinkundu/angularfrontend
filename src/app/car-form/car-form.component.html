@@ -1,0 +1,13 @@
+<div class="card my-5">
+    <div class="card-body">
+      <form (ngSubmit)="onSubmit()" #carForm="ngForm">
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input type="text" [(ngModel)]="car.company" 
+            class="form-control" id="company" name="company" placeholder="Enter the company's name">
+        </div>
+        
+        <button type="submit" class="btn btn-info">Submit</button>
+      </form>
+    </div>
+  </div>
